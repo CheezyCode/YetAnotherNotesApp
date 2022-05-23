@@ -18,7 +18,7 @@ This is a simple note taking app in Android with Integrated API. In this project
 
 ## Demo
 
-![](https://yt3.ggpht.com/SGWJWplTHs6omu72a_scFQDndpAfgwdj4Pct6Fs8BGO7gU9yyTMV2H4H0epk7OgnTxwFmsIFEP9D3Q=s640-c-fcrop64=1,00000000ffffffff-nd-v1-rwae.gif)
+![Demo](https://yt3.ggpht.com/SGWJWplTHs6omu72a_scFQDndpAfgwdj4Pct6Fs8BGO7gU9yyTMV2H4H0epk7OgnTxwFmsIFEP9D3Q=s640-c-fcrop64=1,00000000ffffffff-nd-v1-rwa)
 
 
 ## 🚀 About this series
