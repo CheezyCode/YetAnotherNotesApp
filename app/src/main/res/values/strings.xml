@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">NoteSample</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_no_account_signup">Don\'t have an account? <font color="#2196F3">Register Now</font></string>
+    <string name="txt_register_header">Create New Account</string>
+    <string name="txt_register_subheader">Please provide all the required information</string>
+    <string name="txt_username">Username</string>
+    <string name="txt_username_hint">cheezycode</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_email_hint">cheezycode@gmail.com</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_password_hint">........</string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="txt_already_have_account">Already have an account?</string>
+    <string name="txt_login_header">Welcome Back!</string>
+    <string name="txt_login_subheader">Login to access your notes</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_error_message">%1$S*</string>
+    <string name="note_title">Title</string>
+    <string name="txt_title_hint">Write your title</string>
+    <string name="txt_description">Description</string>
+    <string name="txt_description_hint">Write your description</string>
+    <string name="txt_submit">Submit</string>
+    <string name="add_note">Add Note</string>
+</resources>
