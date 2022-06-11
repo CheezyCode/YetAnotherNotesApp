@@ -74,8 +74,8 @@ class MainFragment : Fragment() {
         findNavController().navigate(R.id.action_mainFragment_to_noteFragment, bundle)
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 
