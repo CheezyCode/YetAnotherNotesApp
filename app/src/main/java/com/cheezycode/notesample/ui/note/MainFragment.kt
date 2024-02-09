@@ -16,12 +16,13 @@ import com.cheezycode.notesample.databinding.FragmentMainBinding
 import com.cheezycode.notesample.models.NoteResponse
 import com.cheezycode.notesample.utils.NetworkResult
 import com.google.gson.Gson
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainFragment : Fragment() {
 
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
-    private val noteViewModel by viewModels<NoteViewModel>()
+    private val noteViewModel by viewModel<NoteViewModel>()
 
     private lateinit var adapter: NoteAdapter
 

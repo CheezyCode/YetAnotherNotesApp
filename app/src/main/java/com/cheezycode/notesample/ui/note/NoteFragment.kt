@@ -14,12 +14,13 @@ import com.cheezycode.notesample.models.NoteRequest
 import com.cheezycode.notesample.models.NoteResponse
 import com.cheezycode.notesample.utils.NetworkResult
 import com.google.gson.Gson
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class NoteFragment : Fragment() {
 
     private var _binding: FragmentNoteBinding? = null
     private val binding get() = _binding!!
-    private val noteViewModel by viewModels<NoteViewModel>()
+    private val noteViewModel by viewModel<NoteViewModel>()
     private var note: NoteResponse? = null
 
     override fun onCreateView(
