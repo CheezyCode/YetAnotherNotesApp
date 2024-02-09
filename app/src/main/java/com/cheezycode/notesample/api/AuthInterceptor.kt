@@ -3,12 +3,13 @@ package com.cheezycode.notesample.api
 import com.cheezycode.notesample.utils.TokenManager
 import okhttp3.Interceptor
 import okhttp3.Response
-import javax.inject.Inject
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.inject
 
-class AuthInterceptor @Inject constructor() : Interceptor {
+class AuthInterceptor : Interceptor, KoinComponent {
 
-    @Inject
-    lateinit var tokenManager: TokenManager
+
+    private val tokenManager: TokenManager by inject()
 
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request().newBuilder()
