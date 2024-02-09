@@ -8,7 +8,7 @@ This is a simple note taking app in Android with Integrated API. In this project
 ## Features
 
 - MVVM Setup
-- HILT
+- Koin
 - Coroutines
 - API Integration using Retrofit
 - Interceptors for Authenticated Flows.
