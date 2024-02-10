@@ -9,12 +9,9 @@ import com.cheezycode.notesample.models.UserResponse
 import com.cheezycode.notesample.repository.UserRepository
 import com.cheezycode.notesample.utils.Helper
 import com.cheezycode.notesample.utils.NetworkResult
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class AuthViewModel @Inject constructor(private val userRepository: UserRepository) : ViewModel() {
+class AuthViewModel (private val userRepository: UserRepository) : ViewModel() {
 
     val userResponseLiveData: LiveData<NetworkResult<UserResponse>>
     get() = userRepository.userResponseLiveData

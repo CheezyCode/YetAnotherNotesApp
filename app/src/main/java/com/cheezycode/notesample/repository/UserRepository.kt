@@ -8,9 +8,8 @@ import com.cheezycode.notesample.models.UserResponse
 import com.cheezycode.notesample.utils.NetworkResult
 import org.json.JSONObject
 import retrofit2.Response
-import javax.inject.Inject
 
-class UserRepository @Inject constructor(private val userAPI: UserAPI) {
+class UserRepository (private val userAPI: UserAPI) {
 
     private val _userResponseLiveData = MutableLiveData<NetworkResult<UserResponse>>()
     val userResponseLiveData: LiveData<NetworkResult<UserResponse>>

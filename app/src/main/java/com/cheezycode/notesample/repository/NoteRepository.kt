@@ -7,9 +7,8 @@ import com.cheezycode.notesample.models.NoteResponse
 import com.cheezycode.notesample.utils.NetworkResult
 import org.json.JSONObject
 import retrofit2.Response
-import javax.inject.Inject
 
-class NoteRepository @Inject constructor(private val noteAPI: NoteAPI) {
+class NoteRepository (private val noteAPI: NoteAPI) {
 
     private val _notesLiveData = MutableLiveData<NetworkResult<List<NoteResponse>>>()
     val notesLiveData get() = _notesLiveData

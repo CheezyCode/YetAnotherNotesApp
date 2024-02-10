@@ -1,11 +1,11 @@
 package com.cheezycode.notesample.ui.login
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
@@ -16,19 +16,17 @@ import com.cheezycode.notesample.models.UserRequest
 import com.cheezycode.notesample.utils.Helper
 import com.cheezycode.notesample.utils.NetworkResult
 import com.cheezycode.notesample.utils.TokenManager
-import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
+import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.activityViewModel
 
-@AndroidEntryPoint
 class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
 
-    private val authViewModel by activityViewModels<AuthViewModel>()
+    private val authViewModel by activityViewModel<AuthViewModel>()
 
-    @Inject
-    lateinit var tokenManager: TokenManager
+     private val tokenManager: TokenManager by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater,

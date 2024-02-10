@@ -1,14 +1,12 @@
 package com.cheezycode.notesample.utils
 
+import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
-import com.cheezycode.notesample.R
 import com.cheezycode.notesample.utils.Constants.PREFS_TOKEN_FILE
 import com.cheezycode.notesample.utils.Constants.USER_TOKEN
-import dagger.hilt.android.qualifiers.ApplicationContext
-import javax.inject.Inject
 
-class TokenManager @Inject constructor(@ApplicationContext context: Context) {
+class TokenManager(context: Application) {
     private var prefs: SharedPreferences =
         context.getSharedPreferences(PREFS_TOKEN_FILE, Context.MODE_PRIVATE)
 
